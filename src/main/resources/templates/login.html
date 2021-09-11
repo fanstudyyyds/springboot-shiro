@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en"xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>登入</title>
+</head>
+<body>
+<h1 th:text="${msg}">登入</h1>
+<form th:action="@{/login}">
+    <p>
+        用户名：
+        <input type="text" name="username"></p>
+    <p>
+        密码：
+        <input type="text" name="passwoed"></p>
+    <button type="submit">提交</button>
+</form>
+</body>
+</html>
